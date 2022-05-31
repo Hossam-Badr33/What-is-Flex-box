@@ -1,0 +1,62 @@
+/*
+global
+*/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.box {
+  flex: 1; /*means all .box equal 1 size*/
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  padding: 10px;
+  color: antiquewhite;
+}
+/*
+flex-number
+*/
+.flex-1 {
+  background-color: aqua;
+  order: 1; /*order of children(flex-1) in main-line*/
+}
+.flex-2 {
+  background-color: black;
+  order: 2;
+}
+.flex-3 {
+  background-color: blue;
+}
+.flex-4 {
+  background-color: blueviolet;
+}
+.flex-5 {
+  background-color: brown;
+}
+.flex-6 {
+  background-color: burlywood;
+  order: 3;
+}
+.flex-7 {
+  background-color: cadetblue;
+}
+.flex-8 {
+  background-color: chocolate;
+}
+.flex-9 {
+  background-color: crimson;
+}
+.flex-10 {
+  background-color: aqua;
+  order: -1; /*negative value will be im start of main-line*/
+}
+/*
+.container
+*/
+.container {
+  display: flex;
+  border: 3px solid goldenrod;
+}

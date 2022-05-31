@@ -1,0 +1,90 @@
+/*
+global
+*/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.box {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  padding: 10px;
+  color: antiquewhite;
+  /* width: 50px; */
+  height: 50px;
+}
+/*
+flex-number
+*/
+.flex-1 {
+  background-color: aqua;
+  width: 10px;
+}
+.flex-2 {
+  background-color: black;
+  width: 40px;
+}
+.flex-3 {
+  background-color: blue;
+  width: 50px;
+}
+.flex-4 {
+  background-color: blueviolet;
+  width: 90px;
+}
+.flex-5 {
+  background-color: brown;
+}
+.flex-6 {
+  background-color: burlywood;
+  width: 90px;
+}
+.flex-7 {
+  background-color: cadetblue;
+  width: 40px;
+}
+.flex-8 {
+  background-color: chocolate;
+}
+.flex-9 {
+  background-color: crimson;
+}
+.flex-10 {
+  background-color: aqua;
+}
+/*
+.container
+*/
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  /*in case flex-direction => row(main-direction)*/
+  justify-content: flex-start;
+  /*align-items apply on cross-direction top-to-bottom*/
+  align-items: flex-start;
+  align-items: flex-end;
+  align-items: center;
+  align-items: stretch;
+  align-items: baseline; /*all text same line*/
+  border: 3px solid goldenrod;
+  height: 100vh;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  /*in case flex-direction => column(cross-direction)*/
+  justify-content: flex-start;
+  /*align-items apply on main-direction left-to-right*/
+  align-items: flex-start;
+  align-items: flex-end;
+  align-items: center;
+  align-items: stretch;
+  align-items: baseline;
+  border: 3px solid goldenrod;
+  height: 100vh;
+}

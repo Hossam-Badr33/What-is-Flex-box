@@ -1,0 +1,74 @@
+/*
+global
+*/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.box {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  padding: 10px;
+  color: #faebd7;
+  /* width: 100px; */
+  /* height: 40px; */
+}
+/*
+flex-number
+*/
+.flex-1 {
+  background-color: aqua;
+}
+.flex-2 {
+  background-color: black;
+}
+.flex-3 {
+  background-color: blue;
+}
+.flex-4 {
+  background-color: blueviolet;
+}
+.flex-5 {
+  background-color: brown;
+}
+.flex-6 {
+  background-color: burlywood;
+}
+.flex-7 {
+  background-color: cadetblue;
+}
+.flex-8 {
+  background-color: chocolate;
+}
+.flex-9 {
+  background-color: crimson;
+  /*align self for flex-children to overwrite flex-parent value*/
+  align-self: flex-start;
+  align-self: flex-end;
+  align-self: stretch;
+}
+.flex-10 {
+  background-color: aqua;
+}
+/*
+.container
+*/
+.container {
+  border: 3px solid goldenrod;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: nowrap;
+  /*in case flex-direction => row(main-direction)*/
+  justify-content: center;
+  align-items: flex-end;
+}
+.container {
+  border: 3px solid goldenrod;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}

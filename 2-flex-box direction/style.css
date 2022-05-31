@@ -1,0 +1,66 @@
+/*
+global
+*/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*
+.container
+*/
+.container {
+  /* display: inline-flex; */
+  display: flex;
+  flex-direction: row; /*default main access left-to-right*/
+  flex-direction: row-reverse; /*main-access right-to-left*/
+  flex-direction: column; /*main access top-to-bottom*/
+  flex-direction: column-reverse; /*main access bottom-to-top*/
+  border: 3px solid goldenrod;
+  height: 100vh; /* view-port similar 1vh is 1% of the viewport height*/
+}
+/*
+.box
+*/
+.box {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  padding: 10px;
+  color: antiquewhite;
+}
+/*
+flex-number
+*/
+.flex-1 {
+  background-color: aqua;
+}
+.flex-2 {
+  background-color: black;
+}
+.flex-3 {
+  background-color: blue;
+}
+.flex-4 {
+  background-color: blueviolet;
+}
+.flex-5 {
+  background-color: brown;
+}
+.flex-6 {
+  background-color: burlywood;
+}
+.flex-7 {
+  background-color: cadetblue;
+}
+.flex-8 {
+  background-color: chocolate;
+}
+.flex-9 {
+  background-color: crimson;
+}
+.flex-10 {
+  background-color: aqua;
+}
