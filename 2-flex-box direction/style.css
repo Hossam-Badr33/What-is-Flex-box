@@ -15,7 +15,7 @@ global
   /* display: inline-flex; */
   display: flex;
   flex-direction: row; /*default main access left-to-right*/
-  flex-direction: row-reverse; /*main-access right-to-left*/
+  flex-direction: column-reverse; /*main-access right-to-left*/
   flex-direction: column; /*main access top-to-bottom*/
   flex-direction: column-reverse; /*main access bottom-to-top*/
   border: 3px solid goldenrod;

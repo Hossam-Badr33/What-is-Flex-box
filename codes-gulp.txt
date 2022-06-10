@@ -1,0 +1,8 @@
+- npm init                      => npm(node package manager) intall package.json file in our folder
+- npm install gulp -g     
+ pass:    
+-npm install gulp --save-dev    =>install gulp file locally (node_modules)
+--npm install gulp-autoprefixer -g
+-npm install gulp-autoprefixer --save-dev
+- touch gulpfile.js               
+

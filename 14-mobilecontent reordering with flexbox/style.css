@@ -1,0 +1,156 @@
+/*Global*/
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+/**/
+body {
+  background: linear-gradient(to right, #81b, rgb(153, 96, 191));
+}
+/*Menu*/
+.menu {
+  color: antiquewhite;
+  font-size: 30px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  display: none;
+  cursor: pointer;
+  text-align: right;
+}
+.menu:hover {
+  color: #81b;
+}
+/*header*/
+header {
+  background-color: rgb(223, 203, 188);
+  border-radius: 10px;
+}
+header h1 {
+  text-align: center;
+  color: rgb(38, 38, 129);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 5px;
+}
+/*nav*/
+nav {
+  background-color: rgb(191, 151, 229);
+  border-radius: 30px;
+  border: 5px solid;
+  margin-bottom: 10px;
+}
+nav .container {
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+nav .container li {
+  cursor: pointer;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  padding: 10px;
+  flex: 3;
+}
+nav .container li:hover {
+  background: linear-gradient(to right, #81b, rgb(153, 96, 191));
+  color: white;
+}
+nav .container .social {
+  flex: 1;
+}
+
+/*.background*/
+.background {
+  text-align: center;
+}
+.background img {
+  border-radius: 3%;
+}
+/*.explain*/
+.explain {
+  background-color: rgb(223, 203, 188);
+}
+.explain p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  font-variant: small-caps;
+  text-align: center;
+  padding: 5px;
+}
+/*form*/
+form {
+  text-align: center;
+}
+form input[type="text"] {
+  padding: 5px;
+}
+/*footer*/
+footer p {
+  background-color: rgb(183, 158, 158);
+  text-align: center;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  padding: 5px;
+}
+/*media*/
+@media all and (max-width: 1000px) {
+  nav .container {
+    flex-wrap: wrap;
+  }
+  nav .container li {
+    flex: 1 1 50%;
+  }
+}
+@media all and (max-width: 600px) {
+  nav .container {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  nav .container li {
+    flex-basis: 100%;
+  }
+  nav .container .social {
+    flex: 25%;
+  }
+  body {
+    height: 100vh;
+  }
+  .wraper {
+    display: flex;
+    height: 1200px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .wraper > * {
+    order: 100;
+    /* height: 200px; */
+  }
+  .wraper nav {
+    order: 1;
+  }
+  .menu {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .wraper .img {
+    order: 2;
+  }
+  .wraper header {
+    order: 2;
+  }
+  .explain {
+    order: 3;
+  }
+  .wraper form {
+    order: 4;
+  }
+  .appear-disappear {
+    display: none;
+  }
+}

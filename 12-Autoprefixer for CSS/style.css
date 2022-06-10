@@ -1,0 +1,52 @@
+/*
+global
+*/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+}
+.box {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  padding: 10px;
+  color: #faebd7;
+  flex-basis: 100px;
+  width: 50px;
+}
+/*.flex-number*/
+.flex-1 {
+  background-color: aqua;
+}
+.flex-2 {
+  background-color: black;
+}
+.flex-3 {
+  background-color: blue;
+  flex-grow: 3;
+}
+.flex-4 {
+  background-color: blueviolet;
+}
+.flex-5 {
+  background-color: brown;
+  flex-grow: 1;
+}
+.flex-6 {
+  background-color: burlywood;
+}
+/*.container*/
+.container {
+  border: 3px solid goldenrod;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+/*note in case of row or column flex-grow/shrink only affects other flexex in same line (main/cross line*/
