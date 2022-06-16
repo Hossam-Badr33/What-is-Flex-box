@@ -1,0 +1,47 @@
+label,
+input,
+p {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 5px;
+}
+input:last-of-type {
+  background-color: crimson;
+}
+div {
+  position: relative;
+  top: 100px;
+}
+video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+form {
+  background-color: rgb(173, 196, 239);
+  width: 70%;
+  margin: auto;
+}
+/*.container1*/
+.container1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*flex-items*/
+.item1 {
+  flex: 1 1;
+}
+.item1[type="date"] {
+  flex-basis: 100px;
+}
+.item1[type="text"] {
+  flex-basis: 250px;
+}
+.item1[type="search"] {
+  width: 120px;
+  color: white;
+}
