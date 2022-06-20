@@ -1,0 +1,87 @@
+/*global*/
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+}
+/*.app*/
+.app {
+  margin: auto;
+  max-width: 540px;
+  max-height: 90vh;
+  border: 5px solid;
+  border-radius: 30px;
+}
+/*header*/
+header {
+  background-color: yellowgreen;
+  padding: 5px;
+  border-radius: 20px;
+}
+/*header anchor*/
+header a {
+  background-color: rgb(205, 177, 177);
+  padding: 5px;
+}
+/*article*/
+article {
+  height: 1200px;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+/*img*/
+img {
+  border-radius: 20px;
+}
+/*footer*/
+footer {
+  background-color: yellowgreen;
+}
+/*footer anchor*/
+footer a {
+  text-decoration: none;
+  text-align: center;
+}
+/*flex-container-1 => .app*/
+.app {
+  display: flex;
+  flex-direction: column;
+}
+/*flex-container-2 => header*/
+header {
+  display: flex;
+  justify-content: space-around;
+  flex: 1 1 auto;
+}
+/*flex-container-3 => article*/
+article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+article img {
+  flex: 1 1 60%;
+}
+article p:first-of-type {
+  flex: 1 1 30%;
+  width: 30%;
+}
+article > * {
+  padding: 3px;
+}
+/*flex-container-3 => footer*/
+footer {
+  display: flex;
+  justify-content: space-around;
+  /* margin: auto 1px; */
+  border-radius: 20px;
+}
+footer a {
+  padding: 5px;
+  flex: 1;
+}
+footer a:hover {
+  background-color: beige;
+  border-radius: 20px;
+}
